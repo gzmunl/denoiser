@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Denoised WAV File</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Denoised WAV File</h1>
+        <audio controls class="mt-4">
+            <source src="{{ url_for('uploaded_file', filename=filename) }}" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="mt-3">
+            <a href="/" class="btn btn-primary">Upload another file</a>
+        </div>
+    </div>
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
